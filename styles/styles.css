@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: "Newsreader", serif;
+}
+.title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3rem;
+  border-bottom: 2px solid black;
+  padding: 5px;
+}
+.local-time {
+  background-color: black;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 3px 0;
+}
+h1,
+span {
+  font-size: 1.8rem;
+  max-width: 90%;
+  margin: 10px auto;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  padding: 10px;
+  text-indent: 10px;
+}
+img {
+  max-width: 95%;
+}
+.lead-story {
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+.sub-stories {
+  margin: 0 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: yellow;
+  max-height: 600px;
+}
