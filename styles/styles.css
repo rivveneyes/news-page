@@ -13,7 +13,8 @@ body {
   border-bottom: 2px solid black;
   padding: 5px;
 }
-.local-time {
+.local-time,
+h2 {
   background-color: black;
   color: white;
   display: block;
@@ -25,6 +26,9 @@ span {
   font-size: 1.8rem;
   max-width: 90%;
   margin: 10px auto;
+}
+h2 {
+  font-size: 1.5rem;
 }
 p {
   font-size: 1.2rem;
@@ -40,9 +44,19 @@ img {
   border-bottom: 2px solid black;
 }
 .sub-stories {
-  margin: 0 5px;
+  margin: 5px;
+  padding-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: yellow;
   max-height: 600px;
+}
+.sub-stories div:not(:last-child) {
+  border-right: 2px solid black;
+}
+footer {
+  line-height: 1.5rem;
+  border-top: 3px solid black;
+  padding: 3px 20px;
+  background-color: blanchedalmond;
+  text-align: end;
 }

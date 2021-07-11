@@ -1,5 +1,5 @@
 // $("h1").css("backgroundColor", "blue");
-const time = new Date();
+
 const days = [
   "Sunday",
   "Monday",
@@ -28,6 +28,7 @@ function AmOrPm(hour) {
   } else return "PM";
 }
 function localDate() {
+  const time = new Date();
   const hour = hourConverter(time.getHours());
   const minute = zeroplacer(time.getMinutes());
   let result = `${days[time.getDay()]} ${hour}:${minute} ${AmOrPm(
@@ -35,8 +36,18 @@ function localDate() {
   )}`;
   $(".local-time").text(result);
 }
-$(document).ready(function () {
+
+$(document).ready(() => {
   localDate();
-  $(".bxslider").bxSlider({ mode: "fade", auto: "true", captions: "true" });
   setInterval(localDate, 1000);
+  $("#subscribe").hover(
+    function () {
+      $(this).css({ color: "blue", textDecoration: "underline" });
+    },
+    function () {
+      $(this).css({ color: "unset", textDecoration: "none" });
+    }
+  );
+
+  $(".bxslider").bxSlider({ mode: "fade", auto: "true", captions: "true" });
 });

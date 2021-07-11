@@ -10,6 +10,7 @@
     ></script>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/subcribe-form.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,13 +36,47 @@
     <header class="title">
       The Mail Man <i class="far fa-newspaper fa-sm"></i>
     </header>
-
     <small class="local-time"></small>
 
+    <!-- ====NEW -->
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Register Whith Us</h2>
+        <div class="form-control">
+          <label for="username"> UserName</label>
+          <input type="text" id="username" placeholder="Enter username" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="email"> Email</label>
+          <input type="text" id="email" placeholder="Enter email" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password"> Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password2"> Confirm Password</label>
+          <input
+            type="password"
+            id="password2"
+            placeholder="Enter password again"
+          />
+          <small>Error message</small>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+    <!-- ====NEW -->
     <main>
       <div class="lead-story">
         <h1>Dose this ship wring a bell?</h1>
-        <img src="images/a-warship-in-the-bay-1636310-639x426.jpg" />
+        <img
+          src="images/a-warship-in-the-bay-1636310-639x426.jpg"
+          alt="warship docked at a bay"
+        />
         <p>
           <b>Old warship</b> is set to be remodeled inside to become new hotel
           and casion.
@@ -50,42 +85,57 @@
       <div class="sub-stories">
         <div>
           <span>Popular lion couple expeting new baby cub.</span>
-          <img src="images/animal-tenderness-1529629-639x448.jpg" alt="" />
+          <img
+            src="images/animal-tenderness-1529629-639x448.jpg"
+            alt="lion and lioness"
+          />
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
-            totam minus eveniet nulla laboriosam soluta quod a sed labore neque
-            blanditiis commodi est odio molestiae aliquam, distinctio vitae
-            voluptatibus incidunt.
+            A local wildlife preserve is expecting new baby cubs, follow this
+            story for exact date date of birth and images.
           </p>
         </div>
 
         <div>
-          <span>Dose this ship wring a bell?</span>
-          <img src="images/civil-war-musket-1420797-639x150.jpg" />
+          <span>Historc gun sold for jaw dropping amount</span>
+          <img
+            src="images/civil-war-musket-1420797-639x150.jpg"
+            alt="old musket"
+          />
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
-            totam minus eveniet nulla laboriosam soluta quod a sed labore neque
-            blanditiis commodi est odio molestiae aliquam, distinctio vitae
-            voluptatibus incidunt.
+            Old musket found for sale in a yard sale for "$30" dollars found to
+            be world over "$30,000" dollars due to it's rarity.
           </p>
         </div>
       </div>
     </main>
     <h2>More stories</h2>
     <ul class="bxslider" options="vertical">
-      <li><img src="/images/a-warship-in-the-bay-1636310-639x426.jpg" /></li>
       <li>
         <img
-          src="/images/animal-tenderness-1529629-639x448.jpg"
-          alt=""
-          title="Lions"
+          src="/images/city-skyline-1224672-639x464.jpg"
+          alt="full city view"
+          title="Cleanest city in the state"
         />
       </li>
-      <li><img src="/images/civil-war-musket-1420797-639x150.jpg" /></li>
+      <li>
+        <img
+          src="/images/the-house-that-barry-built-1442180-639x426.jpg"
+          alt="baseball stadium"
+          title="Something alarming found under baseball stadium"
+        />
+      </li>
+      <li>
+        <img
+          src="/images/world-wide-models-2-1309161-638x231.jpg"
+          alt="silhouette of 4 modles"
+          title="Model agency looking for new talent"
+        />
+      </li>
     </ul>
   </body>
   <footer>
-    <h3>subscribe for more news</h3>
+    <p><small id="subscribe">subscribe</small> for more stories</p>
     <small>created by Joshua Garcia</small>
   </footer>
+  <script src="scripts/form.js"></script>
 </html>
