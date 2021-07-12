@@ -9,7 +9,18 @@
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
-  border: 3px solid red;
+  height: 80vh;
+  width: 100vw;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition-property: opacity;
+  transition-delay: 0.2;
+  transition-duration: 0.5s;
+}
+.reveal {
+  visibility: visible;
+  opacity: 97%;
 }
 .container h2 {
   text-align: center;
@@ -58,7 +69,15 @@
 .form-control.error small {
   visibility: visible;
 }
-
+#exit {
+  cursor: pointer;
+  background-color: var(--error-color);
+  border: 2px solid var(--error-color);
+  border-radius: 5px;
+  padding: 6px;
+  margin: 5px;
+  float: right;
+}
 .form button {
   cursor: pointer;
   background-color: #3498db;
@@ -69,4 +88,8 @@
   padding: 10px;
   margin-top: 20px;
   width: 100%;
+}
+.form button:hover {
+  border: 2px solid black;
+  transform: scale(1.08);
 }
