@@ -51,6 +51,22 @@ function passwordMatchCheck(input1, input2) {
 function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
+function submitSucess() {
+  const properSubmittions = $(".success", "#form");
+  const filledOptions = $(".form-control", "#form");
+  console.log($("#form-submission"));
+  if (properSubmittions.length === filledOptions.length) {
+    $("#form-submission").text("SUBMISSION SUCCESS");
+    setTimeout(() => {
+      $("#form-submission").text("Submit");
+    }, 3200);
+    email.value = "";
+    username.value = "";
+    password.value = "";
+    password2.value = "";
+  }
+}
+
 //Event listeners
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -58,10 +74,10 @@ form.addEventListener("submit", function (e) {
   checkInputLegth(username, 4, 15);
   checkInputLegth(password, 4, 20);
   passwordMatchCheck(password, password2);
+  submitSucess();
 });
 
 for (let i = 0; i < formButtons.length; i++) {
-  console.log(formButtons[i]);
   formButtons[i].addEventListener("click", () => {
     mainform.classList.toggle("reveal");
   });

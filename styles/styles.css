@@ -13,7 +13,11 @@ body {
   border-bottom: 2px solid black;
   padding: 5px;
 }
-.local-time,
+.block small:not(:last-child) {
+  margin-right: 18px;
+}
+
+.block,
 h2 {
   background-color: black;
   color: white;
