@@ -54,16 +54,19 @@ function getFieldName(input) {
 function submitSucess() {
   const properSubmittions = $(".success", "#form");
   const filledOptions = $(".form-control", "#form");
-  console.log($("#form-submission"));
   if (properSubmittions.length === filledOptions.length) {
     $("#form-submission").text("SUBMISSION SUCCESS");
     setTimeout(() => {
       $("#form-submission").text("Submit");
     }, 3200);
     email.value = "";
+    email.classList.remove(".success");
     username.value = "";
+    username.classList.remove(".success");
     password.value = "";
+    password.classList.remove(".success");
     password2.value = "";
+    password2.classList.remove(".success");
   }
 }
 
