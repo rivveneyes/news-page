@@ -1,5 +1,3 @@
-// $("h1").css("backgroundColor", "blue");
-
 const days = [
   "Sunday",
   "Monday",
@@ -48,6 +46,9 @@ $(document).ready(() => {
       $(this).css({ color: "unset", textDecoration: "none" });
     }
   );
-
-  $(".bxslider").bxSlider({ mode: "fade", auto: "true", captions: "true" });
+  if (window.location.pathname !== "/") {
+    return;
+  } else {
+    $(".bxslider").bxSlider({ mode: "fade", auto: "true", captions: "true" });
+  }
 });

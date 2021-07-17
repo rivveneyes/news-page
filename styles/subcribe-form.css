@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 
-:root {
-  --success-color: #2ecc71;
-  --error-color: #e74c3c;
-}
-
 .container {
   background-color: #fff;
   border-radius: 5px;
