@@ -14,60 +14,6 @@ body {
   display: flex;
   justify-content: space-around;
 }
-nav {
-  background-color: var(--main-color);
-  font-size: 1.2rem;
-}
-ol {
-  width: 75%;
-  margin: auto;
-  padding: 5px 0;
-}
-ol > a {
-  text-decoration: none;
-  color: black;
-}
-ol > a:hover {
-  color: white;
-  text-decoration: underline;
-}
-.title {
-  font-size: 3rem;
-  border-bottom: 2px solid black;
-  padding: 5px;
-}
-.block {
-  font-size: 1.2rem;
-}
-.block small:not(:last-child) {
-  margin-right: 18px;
-}
-.block,
-h2 {
-  background-color: black;
-  color: white;
-  display: block;
-  text-align: center;
-  padding: 5px 0;
-}
-h1,
-span {
-  font-size: 1.5rem;
-  max-width: 90%;
-  margin: 10px auto;
-}
-h2 {
-  font-size: 1.3em;
-}
-p {
-  font-size: 1.2rem;
-  line-height: 1.2;
-  padding: 10px;
-  text-indent: 10px;
-}
-img {
-  max-width: 95%;
-}
 .lead-story {
   text-align: center;
   border-bottom: 2px solid black;
@@ -78,6 +24,60 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-height: 600px;
+}
+nav {
+  background-color: var(--main-color);
+  font-size: 1.2rem;
+  margin: auto;
+  padding: 8px 30px;
+}
+
+nav > a {
+  text-decoration: none;
+  color: black;
+}
+nav > a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.title {
+  font-size: 3rem;
+  border-bottom: 2px solid black;
+  padding: 5px;
+}
+
+.block small:not(:last-child) {
+  margin-right: 18px;
+}
+.block,
+h2 {
+  background-color: black;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 1.3em;
+}
+h1,
+span {
+  font-size: 1.5rem;
+  max-width: 90%;
+  margin: 10px auto;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  padding: 10px;
+  text-indent: 10px;
+}
+img {
+  max-width: 95%;
+}
+li {
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
 }
 .sub-stories div:not(:last-child) {
   border-right: 2px solid black;
