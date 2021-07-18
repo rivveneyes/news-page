@@ -4,9 +4,105 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sports</title>
+    <script
+      src="https://kit.fontawesome.com/9a7fac8c65.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css"
+      rel="stylesheet"
+    />
+
+    <title>State News Page</title>
   </head>
   <body>
-    <h1>SPORTS</h1>
+    <header class="title flex">
+      The Mail Man <i class="far fa-newspaper fa-sm"></i>
+    </header>
+    <nav class="flex">
+      <a href="../index.html">Main</a>
+      <a href="stateNews.html">Top Stories</a>
+      <a href="sports.html">Sports</a>
+    </nav>
+    <div class="block">
+      <small class="local-time"></small>
+      <small
+        ><a class="form-subscribe" href="#">Subcribe</a> for daily
+        stories</small
+      >
+    </div>
+
+    <h1 class="lead-story">Sports Stories</h1>
+    <ol>
+      <li class="sub-stories">
+        <img src=../images/basketball-stadium-1481009-640x480.jpg
+        alt="basketball stadium">
+        <p>A highschool team goes un-defeated 2 years running.</p>
+      </li>
+      <li class="sub-stories">
+        <img src=../images/citizens-bank-park-1232936-638x215.jpg alt="base ball
+        stadium">
+        <p>
+          Whole baseball team dosn't show up for match.Coach says,"The proved
+          their point".
+        </p>
+      </li>
+      <li class="sub-stories">
+        <img src=../images/horse-1392712-638x387.jpg alt="horse with riders
+        jumping over obstical">
+        <p>
+          Woman and her horse accidentally breaks two records during
+          competition.
+        </p>
+      </li>
+    </ol>
+    <div>
+      <h2>More stories</h2>
+      <ul class="bxslider" options="vertical">
+        <li>
+          <img
+            src="../images/city-skyline-1224672-639x464.jpg"
+            alt="full city view"
+            title="Cleanest city in the state"
+          />
+        </li>
+        <li>
+          <img
+            src="../images/the-house-that-barry-built-1442180-639x426.jpg"
+            alt="baseball stadium"
+            title="Something alarming found under baseball stadium"
+          />
+        </li>
+        <li>
+          <img
+            src="../images/world-wide-models-2-1309161-638x231.jpg"
+            alt="silhouette of 4 modles"
+            title="Model agency looking for new talent"
+          />
+        </li>
+      </ul>
+    </div>
   </body>
+  <footer>
+    <p>
+      <a class="form-subscribe" href="#main-form">subscribe</a> for more stories
+    </p>
+    <small>created by Joshua Garcia</small>
+  </footer>
+  <script src="../scripts/imgslider.js"></script>
+  <script src="../scripts/clock.js"></script>
 </html>

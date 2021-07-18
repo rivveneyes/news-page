@@ -21,6 +21,12 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css"
+      rel="stylesheet"
+    />
+
     <title>State News Page</title>
   </head>
   <body>
@@ -28,9 +34,9 @@
       The Mail Man <i class="far fa-newspaper fa-sm"></i>
     </header>
     <nav class="flex">
-        <a href="/">Main</a>
-        <a href="stateNews.html">Top Stories</a>
-        <a href="sports.html">Sports</a>
+      <a href="../index.html">Main</a>
+      <a href="stateNews.html">Top Stories</a>
+      <a href="sports.html">Sports</a>
     </nav>
     <div class="block">
       <small class="local-time"></small>
@@ -39,16 +45,62 @@
         stories</small
       >
     </div>
-    <main>
-        <h1 class="lead-story">TOP STORIES OF THE WEEK</h1>
-          <ol>
-            <li class="sub-stories"><img src=../images/landfill-1543880-639x428.jpg>
-            <p>The US's landfills are becoming more and more overwhelmed.</p></li>
-            <li class="sub-stories"><img src=../images/yew-hedge-maze-1341290-640x480.jpg>
-            <p>Child of a millionaires gets lost in a maze for two days while father is frantically searching for her.</p> </li>
-            <li class="sub-stories"><img src=../images/sea-of-clouds-1525965-640x480.jpg>
-            <p>Strange weathers patterns show we are on the path for a intersing next winter.</p></li>
-          </ol>
+
+    <h1 class="lead-story">TOP STORIES OF THE WEEK</h1>
+    <ol>
+      <li class="sub-stories">
+        <img src=../images/landfill-1543880-639x428.jpg alt="landfill">
+        <p>The US's landfills are becoming more and more overwhelmed.</p>
+      </li>
+      <li class="sub-stories">
+        <img src=../images/yew-hedge-maze-1341290-640x480.jpg alt="hedge-maze">
+        <p>
+          Child of a millionaires gets lost in a maze for two days while father
+          is frantically searching for her.
+        </p>
+      </li>
+      <li class="sub-stories">
+        <img src=../images/sea-of-clouds-1525965-640x480.jpg alt="world covered
+        in could">
+        <p>
+          Strange weathers patterns show we are on the path for a intersing next
+          winter.
+        </p>
+      </li>
+    </ol>
+    <div>
+      <h2>More stories</h2>
+      <ul class="bxslider" options="vertical">
+        <li>
+          <img
+            src="../images/city-skyline-1224672-639x464.jpg"
+            alt="full city view"
+            title="Cleanest city in the state"
+          />
+        </li>
+        <li>
+          <img
+            src="../images/the-house-that-barry-built-1442180-639x426.jpg"
+            alt="baseball stadium"
+            title="Something alarming found under baseball stadium"
+          />
+        </li>
+        <li>
+          <img
+            src="../images/world-wide-models-2-1309161-638x231.jpg"
+            alt="silhouette of 4 modles"
+            title="Model agency looking for new talent"
+          />
+        </li>
+      </ul>
+    </div>
   </body>
+  <footer>
+    <p>
+      <a class="form-subscribe" href="#main-form">subscribe</a> for more stories
+    </p>
+    <small>created by Joshua Garcia</small>
+  </footer>
+  <script src="../scripts/imgslider.js"></script>
   <script src="../scripts/clock.js"></script>
 </html>
