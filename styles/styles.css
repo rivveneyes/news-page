@@ -2,11 +2,12 @@
   box-sizing: border-box;
 }
 :root {
-  --main-color: #9c8f8f;
+  --main-color: #b79a83;
   --success-color: #2ecc71;
   --error-color: #e74c3c;
 }
 body {
+  background-color: var(--main-color);
   text-align: center;
   font-family: "Newsreader", serif;
 }
@@ -26,7 +27,8 @@ body {
   max-height: 600px;
 }
 nav {
-  background-color: var(--main-color);
+  background-color: black;
+  border-bottom: 1px solid white;
   font-size: 1.2rem;
   margin: auto;
   padding: 8px 30px;
@@ -34,13 +36,14 @@ nav {
 
 nav > a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 nav > a:hover {
   color: white;
   text-decoration: underline;
 }
 .title {
+  background-color: white;
   font-size: 3rem;
   border-bottom: 2px solid black;
   padding: 5px;
@@ -84,8 +87,84 @@ li {
 }
 footer {
   line-height: 1.5rem;
-  border-top: 3px solid black;
+  border-top: 3px solid white;
   padding: 3px 20px;
-  background-color: blanchedalmond;
+  color: white;
+  background-color: black;
   text-align: end;
+}
+
+@media (min-width: 600px) {
+  body {
+    margin: 5px 30px;
+  }
+  main {
+    margin-bottom: 10px;
+  }
+
+  .title {
+    margin: auto;
+  }
+
+  .title-nav {
+    display: flex;
+    background-color: white;
+    padding: 0 300px;
+  }
+  .title-nav i {
+    margin-left: 10px;
+  }
+  nav {
+    width: 400px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-bottom: 1px;
+    border-bottom: none;
+  }
+  .block {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+  }
+  h1,
+  h2 {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  .lead-story,
+  .sub-stories {
+    max-width: 70%;
+    margin: auto;
+  }
+  .sub-stories span {
+    display: inline-block;
+    font-size: 2.1rem;
+    margin-bottom: 40px;
+  }
+  .sub-stories div {
+    padding: 5px;
+  }
+  img {
+    margin: auto;
+    max-width: 400px;
+    max-height: 400px;
+  }
+  ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+  }
+  li.sub-stories {
+    display: initial;
+    border-bottom: none;
+  }
+  .sub-stories p {
+    background-color: wheat;
+  }
+  .stories-slider {
+    max-width: 65%;
+    margin: auto;
+  }
 }

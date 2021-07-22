@@ -8,31 +8,32 @@
       src="https://kit.fontawesome.com/9a7fac8c65.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/subcribe-form.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Newsreader:ital@1&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital@1&display=swap"
+    rel="stylesheet"
     />
     <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
     <!-- slider css -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css"
-      rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css"
+    rel="stylesheet"
     />
     <script src="scripts/imgslider.js"></script>
     <!-- slider css END -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/subcribe-form.css" />
     <title>Mail-man Home Page</title>
   </head>
   <body>
+    <div class="title-nav">
     <header class="title flex">
       The Mail Man <i class="far fa-newspaper fa-sm"></i>
     </header>
@@ -41,45 +42,47 @@
       <a href="./pages/stateNews.html">Top Stories</a>
       <a href="./pages/sports.html">Sports</a>
   </nav>
-    <div class="block">
-    <small class="local-time"></small>
-    <small><a class="form-subscribe" href="#">Subcribe</a> for daily stories</small>
-  </div>  
+</div> 
+<div class="block">
+<small class="local-time"></small>
+<small><a class="form-subscribe" href="#">Subcribe</a> for daily stories</small>
+</div> 
     <!-- ====form -->
-    <div id="main-form" class="container">
-      <button class="form-subscribe" id="exit">&#x2716</button>
-      <form id="form" class="form">
-        <h2>Register Whith Us</h2>
-        <div class="form-control">
-          <label for="username"> UserName</label>
-          <input type="text" id="username" placeholder="Enter username" />
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="email"> Email</label>
-          <input type="text" id="email" placeholder="Enter email" />
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="password"> Password</label>
-          <input type="password" id="password" placeholder="Enter password" />
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="password2"> Confirm Password</label>
-          <input
-            type="password"
-            id="password2"
-            placeholder="Enter password again"
-          />
-          <small>Error message</small>
-        </div>
-        <button id="form-submission">Submit</button>
-      </form>
 
-    </div>
     <!-- ====form -->
     <main>
+      <div id="main-form" class="container">
+        <button class="form-subscribe" id="exit">&#x2716</button>
+        <form id="form" class="form">
+          <h2>Register Whith Us</h2>
+          <div class="form-control">
+            <label for="username"> UserName</label>
+            <input type="text" id="username" placeholder="Enter username" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="email"> Email</label>
+            <input type="text" id="email" placeholder="Enter email" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="password"> Password</label>
+            <input type="password" id="password" placeholder="Enter password" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="password2"> Confirm Password</label>
+            <input
+              type="password"
+              id="password2"
+              placeholder="Enter password again"
+            />
+            <small>Error message</small>
+          </div>
+          <button id="form-submission">Submit</button>
+        </form>
+  
+      </div>
       <div class="lead-story">
         <h1>Dose this ship ring a bell?</h1>
         <img
@@ -100,7 +103,7 @@
           />
           <p>
             A local wildlife preserve is expecting new baby cubs, follow this
-            story for exact date date of birth and images.
+            story for exact due date of birth and images.
           </p>
         </div>
 
@@ -112,11 +115,12 @@
           />
           <p>
             Old musket found for sale in a yard sale for "$30" dollars found to
-            be world over "$30,000" dollars due to it's rarity.
+            be worth over "$30,000" dollars due to it's rarity.
           </p>
         </div>
       </div>
     </main>
+    <div class="stories-slider">
     <h2>More stories</h2>
     <ul class="bxslider" options="vertical">
       <li>
@@ -141,6 +145,7 @@
         />
       </li>
     </ul>
+  </div>
   </body>
   <footer>
     <p><a class="form-subscribe" href="#main-form">subscribe</a> for more stories</p>
